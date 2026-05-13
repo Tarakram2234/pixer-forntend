@@ -5,17 +5,14 @@ function Homepage() {
   return (
     <>
       <Navbar />
-      <section className="bg-primary text-white py-5">
-        <div className="container py-5">
-          <div className="row align-items-center">
+      <section className="bg-primary text-white py-5" style={{ width: '100%' }}>
+        <div style={{ padding: '3rem 1rem' }}>
+          <div className="row align-items-center" style={{ margin: 0 }}>
             <div className="col-lg-6">
               <h1 className="display-4 fw-bold mb-4">Pixer – Digital Marketplace</h1>
-              <p className="lead mb-4">
-                Buy and sell premium digital products: templates, source codes, UI kits, 
-                graphics, ebooks, courses, and more.
-              </p>
-              <button className="btn btn-light btn-lg px-4 rounded-pill">Explore Now</button>
-              <button className="btn btn-outline-light btn-lg ms-3 px-4 rounded-pill">Become a Vendor</button>
+              <p className="lead mb-4">Buy and sell premium digital products...</p>
+              <button className="btn btn-light btn-lg px-4 rounded-pill me-3">Explore Now</button>
+              <button className="btn btn-outline-light btn-lg px-4 rounded-pill">Become a Vendor</button>
             </div>
             <div className="col-lg-6 d-none d-lg-block">
               <div className="bg-white text-dark p-5 rounded-4 shadow text-center">
@@ -27,10 +24,10 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="py-5 bg-light">
-        <div className="container">
+      <section className="py-5 bg-light" style={{ width: '100%' }}>
+        <div style={{ padding: '0 1rem' }}>
           <h2 className="text-center mb-5 fw-bold">Popular Categories</h2>
-          <div className="row g-4">
+          <div className="row g-4" style={{ margin: 0 }}>
             {['Templates', 'Source Codes', 'UI Kits', 'Graphics', 'Ebooks', 'Courses'].map((cat, idx) => (
               <div className="col-6 col-md-4 col-lg-2" key={idx}>
                 <div className="card text-center border-0 shadow-sm h-100">
@@ -47,10 +44,10 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="py-5">
-        <div className="container">
+      <section className="py-5" style={{ width: '100%' }}>
+        <div style={{ padding: '0 1rem' }}>
           <h2 className="text-center mb-5 fw-bold">Featured Products</h2>
-          <div className="row g-4">
+          <div className="row g-4" style={{ margin: 0 }}>
             {[1,2,3,4,5,6].map((item) => (
               <div className="col-sm-6 col-md-4 col-lg-3" key={item}>
                 <div className="card h-100 shadow-sm border-0">
@@ -73,5 +70,4 @@ function Homepage() {
     </>
   )
 }
-
 export default Homepage
